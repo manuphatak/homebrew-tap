@@ -5,21 +5,21 @@
 class JiraBranch < Formula
   desc "Create a jira branch for a ticket"
   homepage "https://github.com/manuphatak/jira-branch"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/manuphatak/jira-branch/releases/download/v1.0.0/jira-branch_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "84e635542a165e3d458c56bc02b7d375c9de131980cd4e79cfdeb0a4189545ad"
+      url "https://github.com/manuphatak/jira-branch/releases/download/v1.0.1/jira-branch_1.0.1_Darwin_x86_64.tar.gz"
+      sha256 "9e94928a0552503da592a0e8e571c13d9a77b413d975ee245a006fd70daadb15"
 
       def install
         bin.install "jira-branch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/manuphatak/jira-branch/releases/download/v1.0.0/jira-branch_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "94ce07b2510a1afb39b6a74d7eab9fd7c0b814bd43162660ef1a0fc7be5eb731"
+      url "https://github.com/manuphatak/jira-branch/releases/download/v1.0.1/jira-branch_1.0.1_Darwin_arm64.tar.gz"
+      sha256 "36aa2a0f4598eb6ebe234c4820a63bc219034fbcf1a4a67093961a707af6acf5"
 
       def install
         bin.install "jira-branch"
@@ -29,16 +29,16 @@ class JiraBranch < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/manuphatak/jira-branch/releases/download/v1.0.0/jira-branch_1.0.0_Linux_arm64.tar.gz"
-      sha256 "51a16d69c4ae18cc8f6f370c6a18870ba70f5a96494b68ced460aad672373fc5"
+      url "https://github.com/manuphatak/jira-branch/releases/download/v1.0.1/jira-branch_1.0.1_Linux_arm64.tar.gz"
+      sha256 "80b20a5ac14f082e152cf88eba83bc9c8f5ab374235ec4d81358a51fab448b80"
 
       def install
         bin.install "jira-branch"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/manuphatak/jira-branch/releases/download/v1.0.0/jira-branch_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "08bff26db3dc81d6e0dbfa2f4769e1e47547e2f0ecb053d8d9014d5e5e7546b1"
+      url "https://github.com/manuphatak/jira-branch/releases/download/v1.0.1/jira-branch_1.0.1_Linux_x86_64.tar.gz"
+      sha256 "6fd9a874cda36a9453207785e8f636e793bef35d2d0fb16891b405057832cab7"
 
       def install
         bin.install "jira-branch"
